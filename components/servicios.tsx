@@ -1,5 +1,5 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react';
+import Image from 'next/image';
 
 interface Feature {
   imagen: JSX.Element;
@@ -11,39 +11,33 @@ const Servicios = () => {
   const features: Feature[] = [
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Peluqueria",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Peluqueria',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Odontologia",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Odontologia',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Veterinario",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Veterinario',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Entrenamiento",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Entrenamiento',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Psicologia canina",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Psicologia canina',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: "Fiestas de cumpleanos",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.",
+      titulo: 'Fiestas de cumpleanos',
+      desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
   ];
 

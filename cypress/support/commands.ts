@@ -39,8 +39,8 @@
 
 // Prevent TypeScript from reading file as legacy script
 
-import { mount } from "cypress/react18";
+import { mount } from 'cypress/react18';
 
-Cypress.Commands.add<any>("mount", mount);
+Cypress.Commands.add<any>('mount', mount);
 
 export {};

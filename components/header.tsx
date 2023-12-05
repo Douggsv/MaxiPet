@@ -1,13 +1,13 @@
-import { useEffect, useRef, useState } from "react";
-import { ShopSvg } from "./svg/shop";
-import { UserSvg } from "./svg/user";
-import { HouseSvg } from "./svg/house";
-import { LocSvg } from "./svg/loc";
-import { FacebookSvg } from "./svg/fb";
-import { InstagramSvg } from "./svg/ig";
-import { TwitterSvg } from "./svg/twitter";
-import DropDown from './dropdown';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import { ShopSvg } from './svg/shop';
+import { UserSvg } from './svg/user';
+import { HouseSvg } from './svg/house';
+import { LocSvg } from './svg/loc';
+import { FacebookSvg } from './svg/fb';
+import { InstagramSvg } from './svg/ig';
+import { TwitterSvg } from './svg/twitter';
+import DropDown from './dropdown';
 
 interface NavigationItem {
   title: string;
@@ -16,24 +16,24 @@ interface NavigationItem {
 
 const Header: React.FC = () => {
   const [state, setState] = useState(false);
-  const navRef = useRef < HTMLDivElement > (null);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const navigation: NavigationItem[] = [
-    { title: "Inicio", path: "#" },
-    { title: "Comprar por marca", path: "#" },
-    { title: "Comprar por mascota", path: "#" },
-    { title: "Nuestros servicios", path: "#" },
-    { title: "Promociones", path: "#" },
-    { title: "Nosotros", path: "#" },
+    { title: 'Inicio', path: '#' },
+    { title: 'Comprar por marca', path: '#' },
+    { title: 'Comprar por mascota', path: '#' },
+    { title: 'Nuestros servicios', path: '#' },
+    { title: 'Promociones', path: '#' },
+    { title: 'Nosotros', path: '#' },
   ];
 
   useEffect(() => {
     if (navRef.current) {
-      const body = document.body;
-      const customBodyStyle = ["overflow-hidden", "lg:overflow-visible"];
+      const { body } = document;
+      const customBodyStyle = ['overflow-hidden', 'lg:overflow-visible'];
       if (state) body.classList.add(...customBodyStyle);
       else body.classList.remove(...customBodyStyle);
-      const customStyle = ["sticky-nav", "fixed", "border-b"];
+      const customStyle = ['sticky-nav', 'fixed', 'border-b'];
       window.onscroll = () => {
         if (window.scrollY > 80 && navRef.current) {
           navRef.current.classList.add(...customStyle);
@@ -106,6 +106,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
             <div className="flex items-center justify-center flex-1 lg:hidden">
               <button
+                type="button"
                 className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border"
                 onClick={() => setState(!state)}
               >
@@ -142,8 +143,9 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div
-            className={`items-center content-center justify-center mx-auto ${state ? "block" : "hidden"
-              } lg:flex lg:mx-0`}
+            className={`items-center content-center justify-center mx-auto ${
+              state ? 'block' : 'hidden'
+            } lg:flex lg:mx-0`}
           >
             <ul className="justify-center items-center space-y-8 lg:flex gap-24 lg:space-y-0">
               {navigation.map((item, idx) => (

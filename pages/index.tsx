@@ -10,14 +10,12 @@ import Servicios from '../components/servicios';
 import Marcas from '../components/marcas';
 import Footer from '../components/footer';
 
-
 function HomePage() {
   return (
-    <div className='mx-auto'>
+    <div className="mx-auto">
       <Header />
       <Slide />
-      <div className=' '>
-
+      <div className=" ">
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="UNA GRAN VARIEDAD DE CATEGORIAS"
@@ -30,9 +28,15 @@ function HomePage() {
           texto3=""
         />
 
-        <Productos imagenDerecha={true} />
+        <Productos imagenDerecha />
 
-        <Image src="/ad2.png" width={1160} height={220} className='m-20 mx-auto' alt="" />
+        <Image
+          src="/ad2.png"
+          width={1160}
+          height={220}
+          className="m-20 mx-auto"
+          alt=""
+        />
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="PRODUCTOS POPULARES"
@@ -40,8 +44,13 @@ function HomePage() {
         />
 
         <Productos2 />
-        <Image src="/ad1.png" width={1160} height={220} className='m-20 mx-auto' alt="" />
-
+        <Image
+          src="/ad1.png"
+          width={1160}
+          height={220}
+          className="m-20 mx-auto"
+          alt=""
+        />
 
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
@@ -67,7 +76,6 @@ function HomePage() {
 
         <Footer />
       </div>
-
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Image from 'next/image';
 
 interface Elemento {
@@ -9,12 +9,12 @@ interface Elemento {
 
 const Categoria: React.FC = () => {
   const elementos: Elemento[] = [
-    { id: 1, imagenSrc: "/logoicono.png", titulo: "Perros" },
-    { id: 2, imagenSrc: "/logoicono.png", titulo: "Gatos" },
-    { id: 3, imagenSrc: "/logoicono.png", titulo: "Peces" },
-    { id: 4, imagenSrc: "/logoicono.png", titulo: "Roedores" },
-    { id: 5, imagenSrc: "/logoicono.png", titulo: "Reptiles" },
-    { id: 6, imagenSrc: "/logoicono.png", titulo: "Placeholder" },
+    { id: 1, imagenSrc: '/logoicono.png', titulo: 'Perros' },
+    { id: 2, imagenSrc: '/logoicono.png', titulo: 'Gatos' },
+    { id: 3, imagenSrc: '/logoicono.png', titulo: 'Peces' },
+    { id: 4, imagenSrc: '/logoicono.png', titulo: 'Roedores' },
+    { id: 5, imagenSrc: '/logoicono.png', titulo: 'Reptiles' },
+    { id: 6, imagenSrc: '/logoicono.png', titulo: 'Placeholder' },
   ];
 
   return (

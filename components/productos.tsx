@@ -1,6 +1,6 @@
-import React, { FC } from "react";
-import { ShopSvg } from "./svg/shop";
-import Image from "next/image";
+import React, { FC } from 'react';
+import Image from 'next/image';
+import { ShopSvg } from './svg/shop';
 
 interface Feature {
   imagen: JSX.Element;
@@ -20,8 +20,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "1st Choice Puppy Chiot",
-      precio: "$9.99",
+      titulo: '1st Choice Puppy Chiot',
+      precio: '$9.99',
     },
     {
       imagen: (
@@ -29,8 +29,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "2nd Choice Puppy Chiot",
-      precio: "$10.99",
+      titulo: '2nd Choice Puppy Chiot',
+      precio: '$10.99',
     },
     {
       imagen: (
@@ -38,8 +38,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "3rd Choice Puppy Chiot",
-      precio: "$12.99",
+      titulo: '3rd Choice Puppy Chiot',
+      precio: '$12.99',
     },
     {
       imagen: (
@@ -47,8 +47,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "4th Choice Puppy Chiot",
-      precio: "$7.99",
+      titulo: '4th Choice Puppy Chiot',
+      precio: '$7.99',
     },
     {
       imagen: (
@@ -56,8 +56,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "5th Choice Puppy Chiot",
-      precio: "$6.99",
+      titulo: '5th Choice Puppy Chiot',
+      precio: '$6.99',
     },
     {
       imagen: (
@@ -65,8 +65,8 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           <Image src="/bolsa.png" width={100} height={100} alt="" />
         </div>
       ),
-      titulo: "6th Choice Puppy Chiot",
-      precio: "$3.99",
+      titulo: '6th Choice Puppy Chiot',
+      precio: '$3.99',
     },
   ];
 
@@ -85,9 +85,17 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
                     </h4>
                     <p className="text-neutral-600">{item.precio}</p>
                     <div className="w-32">
-                      <Image src="/review.png" width={1160} height={220} alt="" />
+                      <Image
+                        src="/review.png"
+                        width={1160}
+                        height={220}
+                        alt=""
+                      />
                     </div>
-                    <button className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
+                    <button
+                      type="button"
+                      className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100"
+                    >
                       <ShopSvg />
                       <span>Agregar</span>
                     </button>
@@ -101,7 +109,7 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           </>
         ) : (
           <>
-              <div className="lg:col-span-1 my-auto lg:block hidden">
+            <div className="lg:col-span-1 my-auto lg:block hidden">
               <Image src="/cat.png" width={300} height={300} alt="" />
             </div>
             <div className="lg:col-span-2">
@@ -114,9 +122,17 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
                     </h4>
                     <p className="text-neutral-600">{item.precio}</p>
                     <div className="w-32">
-                      <Image src="/review.png" width={1160} height={220} alt="" />
+                      <Image
+                        src="/review.png"
+                        width={1160}
+                        height={220}
+                        alt=""
+                      />
                     </div>
-                    <button type="button" className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
+                    <button
+                      type="button"
+                      className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100"
+                    >
                       <ShopSvg />
                       <span>Agregar</span>
                     </button>

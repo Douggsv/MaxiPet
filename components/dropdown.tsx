@@ -1,12 +1,9 @@
-import { useState } from "react";
-import { LocSvg } from "./svg/loc";
+import { useState } from 'react';
+import { LocSvg } from './svg/loc';
 
-interface DropdownProps {
-}
-
-function Dropdown(props: DropdownProps) {
-  const [isOpen, setIsOpen] = useState < boolean > (false);
-  const [selectedOption, setSelectedOption] = useState < string > ("Bello monte");
+function Dropdown() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedOption, setSelectedOption] = useState<string>('Bello monte');
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -20,6 +17,7 @@ function Dropdown(props: DropdownProps) {
   return (
     <div className="relative flex text-left text-sm align-middle">
       <button
+        type="button"
         onClick={toggleDropdown}
         className="flex items-center justify-between w-40 px-2 text-sm bg-transparent rounded-md focus:outline-none text-white hover:text-black"
       >
@@ -27,8 +25,9 @@ function Dropdown(props: DropdownProps) {
         {selectedOption}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`hover:text-black h-5 w-5 transition-transform transform ${isOpen ? "rotate-180" : ""
-            }`}
+          className={`hover:text-black h-5 w-5 transition-transform transform ${
+            isOpen ? 'rotate-180' : ''
+          }`}
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -45,32 +44,36 @@ function Dropdown(props: DropdownProps) {
           <ul className="py-1">
             <li>
               <button
+                type="button"
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick("La Trinidad")}
+                onClick={() => handleOptionClick('La Trinidad')}
               >
                 La Trinidad
               </button>
             </li>
             <li>
               <button
+                type="button"
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick("Las Mercedes")}
+                onClick={() => handleOptionClick('Las Mercedes')}
               >
                 Las Mercedes
               </button>
             </li>
             <li>
               <button
+                type="button"
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick("Sebucan")}
+                onClick={() => handleOptionClick('Sebucan')}
               >
                 Sebucan
               </button>
             </li>
             <li>
               <button
+                type="button"
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick("Bello monte")}
+                onClick={() => handleOptionClick('Bello monte')}
               >
                 Bello Monte
               </button>
