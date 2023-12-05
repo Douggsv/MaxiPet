@@ -7,9 +7,7 @@ const Titulo = ({ texto1, texto2, texto3 }) => {
       <div className="title text-lg sm:text-lg md:text-xl lg:text-xl xl:text-xl text-primary-300">
         {texto2}
       </div>
-      <div className='text-black mt-10'>
-        {texto3}
-      </div>
+      <div className="text-black mt-10">{texto3}</div>
     </div>
   );
 };

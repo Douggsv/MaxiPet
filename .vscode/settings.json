@@ -28,7 +28,7 @@
   "eslint.codeAction.showDocumentation": {
     "enable": true
   },
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "[javascript]": {
     "editor.formatOnSave": false,
     "editor.defaultFormatter": "vscode.typescript-language-features"
@@ -39,7 +39,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "prettier.disableLanguages": ["javascript", "javascriptreact"],
+  "prettier.disableLanguages": ["", ""],
   "eslint.alwaysShowStatus": true,
   "cSpell.userWords": [
     "SIGNUP",
@@ -91,6 +91,7 @@
   "prettier.singleQuote": true,
   "prettier.trailingComma": "es5",
   "prettier.tabWidth": 2,
+  "prettier.endOfLine": "auto",
   "prettier.useTabs": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",

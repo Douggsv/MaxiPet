@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Mulish:wght@400;500;600;700&family=Open+Sans:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,72 +8,70 @@
 /* purgecss start ignore */
 html,
 body {
-  font-family: 'Montserrat', open-sans;
+  font-family: "Montserrat", open-sans;
   font-weight: regular;
   font-size: 16px;
   line-height: 24px;
 }
 
 .title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   line-height: 24.38px;
 }
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 0;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 24px;
   letter-spacing: 0;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 22px;
   letter-spacing: 0;
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0;
 }
 
 h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 0;
 }
 button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: medium;
   font-size: 16px;
   letter-spacing: 2%;
-
 }
 
-
 .sticky-nav {
-     animation: sticky-nav 300ms;
+  animation: sticky-nav 300ms;
 }
 
 @keyframes sticky-nav {
-    0% {
-        transform: translateY(-6em)
-    }
+  0% {
+    transform: translateY(-6em);
+  }
 
-    100% {
-        transform: translateY(0)
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #nprogress {

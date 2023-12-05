@@ -1,5 +1,5 @@
-import React from 'react';
-import { ShopSvg } from '../components/svg/shop';
+import React from "react";
+import { ShopSvg } from "../components/svg/shop";
 
 const Productos2 = () => {
   const features = [
@@ -40,8 +40,10 @@ const Productos2 = () => {
                 <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
                   {item.imagen}
                 </div>
-                <h4 className="text-sm text-black font-semibold">{item.titulo}</h4>
-                <p className='text-neutral-600'>{item.precio}</p>
+                <h4 className="text-sm text-black font-semibold">
+                  {item.titulo}
+                </h4>
+                <p className="text-neutral-600">{item.precio}</p>
                 <img className="w-32" src="/review.png" alt="" />
                 <button className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
                   <ShopSvg />

@@ -1,14 +1,12 @@
-import { useState } from 'react';
-import { LocSvg } from './svg/loc'
-import { TwitterSvg } from './svg/twitter'
-import { InstagramSvg } from './svg/ig'
-import { FacebookSvg } from './svg/fb'
-
-
+import { useState } from "react";
+import { LocSvg } from "./svg/loc";
+import { TwitterSvg } from "./svg/twitter";
+import { InstagramSvg } from "./svg/ig";
+import { FacebookSvg } from "./svg/fb";
 
 function Dropdown() {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState('Bello monte'); // Inicializa el estado
+  const [selectedOption, setSelectedOption] = useState("Bello monte"); // Inicializa el estado
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -18,7 +16,6 @@ function Dropdown() {
     setSelectedOption(option); // Establece la opción seleccionada
     setIsOpen(false); // Cierro el dropdown al hacer clic en una opción
   };
-
 
   return (
     <div className="relative flex text-left text-sm align-middle">
@@ -30,8 +27,9 @@ function Dropdown() {
         {selectedOption}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`hover:text-black h-5 w-5 transition-transform transform ${isOpen ? 'rotate-180' : ''
-            }`}
+          className={`hover:text-black h-5 w-5 transition-transform transform ${
+            isOpen ? "rotate-180" : ""
+          }`}
           viewBox="0 0 20 20"
           fill="currentColor"
         >
@@ -43,16 +41,13 @@ function Dropdown() {
         </svg>
       </button>
 
-
-
-
       {isOpen && (
         <div className="absolute mt-8 w-40 bg-white rounded-md shadow-lg">
           <ul className="py-1">
             <li>
               <button
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick('La Trinidad')}
+                onClick={() => handleOptionClick("La Trinidad")}
               >
                 La Trinidad
               </button>
@@ -60,7 +55,7 @@ function Dropdown() {
             <li>
               <button
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick('Las Mercedes')}
+                onClick={() => handleOptionClick("Las Mercedes")}
               >
                 Las Mercedes
               </button>
@@ -68,7 +63,7 @@ function Dropdown() {
             <li>
               <button
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick('Sebucan')}
+                onClick={() => handleOptionClick("Sebucan")}
               >
                 Sebucan
               </button>
@@ -76,7 +71,7 @@ function Dropdown() {
             <li>
               <button
                 className="block w-full px-4 py-2 text-left hover:bg-gray-100 text-sm"
-                onClick={() => handleOptionClick('Bello monte')}
+                onClick={() => handleOptionClick("Bello monte")}
               >
                 Bello Monte
               </button>
