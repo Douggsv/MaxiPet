@@ -28,7 +28,7 @@ function Slide() {
       data-te-carousel-item
       data-te-carousel-active={activeSlide === index ? 'true' : 'false'}
     >
-      <img src={slide} className="block w-full" alt={`Slide ${index + 1}`} />
+      <img src={slide} className="block w-full sm:scale-[1.5] md:scale-[1] lg:scale-[1] xl:scale-[1]" alt={`Slide ${index + 1}`} />
     </div>
   ));
 
@@ -42,8 +42,8 @@ function Slide() {
 
   return (
     <div
-      id="carouselExampleIndicators"
-      className="relative"
+      id="carouselExampleIndicators "
+      className="relative mb-20"
       data-te-carousel-init
       data-te-ride="carousel"
     >

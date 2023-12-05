@@ -12,10 +12,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
+      'sm': '360px',
+      'md': '640px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
     extend: {
 
