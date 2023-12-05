@@ -9,9 +9,9 @@ const Marcas = () => {
     "./choice.png"
   ];
   return (
-    <section className="max-w-screen-xl mx-auto px-4 text-black md:px-8 mb-20 ">
+    <section className="max-w-screen-xl mx-auto sm:text-center md:text-center lg:text-left xl:text-left text-black md:px-8 mb-20 ">
       <div className="flex flex-wrap">
-        <div className="w-full sm:w-full md:w-full lg:w-1/3 py-10">
+        <div className="w-full sm:w-full md:w-full lg:w-1/3 mb-20">
           <p>{texto}</p>
         </div>
 
