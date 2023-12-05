@@ -13,3 +13,4 @@ export function InstagramSvg(props) {
       />
     </svg>
   );
+}
