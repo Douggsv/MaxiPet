@@ -1,34 +1,77 @@
 import React from 'react';
-import Image from 'next/image';
-import logo from '../public/logo.png';
+import { useEffect, useRef, useState } from 'react'
+import Slide from '../components/slideshow'
+import Categorias from '../components/categorias'
+import Productos from '../components/productos'
+import Titulo from '../components/titulo'
+import Header from '../components/header'
+import Productos2 from '../components/productos2'
+import Servicios from '../components/servicios'
+import Marcas from '../components/marcas'
+import Footer from '../components/footer'
+
+
 
 function HomePage() {
   return (
-    <div className="min-h-screen w-screen bg-white flex dark:bg-black">
-      <section className="max-w-screen-md m-auto h-full">
-        <article className="">
-          <a href="https://avilatek.dev" target="_blank" rel="noreferrer">
-            <Image
-              className="w-96 h-auto text-center mx-auto"
-              alt="Avila Tek Logo"
-              src={logo}
-            />
-          </a>
-          <h1 className="text-2xl text-center text-gray-700 dark:text-gray-100">
-            Next.js Started template
-          </h1>
-          <p className="text-center text-white text-lg mt-2">
-            <a
-              href="https://github.com/Avila-Tek/next-template"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub
-            </a>
-          </p>
-        </article>
-      </section>
+    <div className='mx-auto'>
+      <Header />
+      <Slide />
+      <div className=' '>
+
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="UNA GRAN VARIEDAD DE CATEGORIAS"
+          texto3=""
+        />
+        < Categorias />
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="PRODUCTOS DESTACADOS"
+          texto3=""
+        />
+
+        <Productos imagenDerecha={true} />
+
+        <img src="ad2.png" className='m-20 mx-auto' alt="" />
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="PRODUCTOS POPULARES"
+          texto3=""
+        />
+
+        <Productos2 />
+        <img src="ad1.png" className='m-20 mx-auto ' alt="" />
+
+
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="ÚLTIMOS PRODUCTOS"
+          texto3=""
+        />
+        <Productos imagenDerecha={false} />
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="NUESTROS SERVICIOS"
+          texto3="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed."
+        />
+
+        <Servicios />
+
+        <Titulo
+          texto1="Lorem ipsum dolor sit amet."
+          texto2="TRABAJAMOS CON LAS MEJORES MARCAS"
+          texto3=""
+        />
+
+        <Marcas />
+
+        <Footer />
+      </div>
+
     </div>
+
+
   );
 }
 

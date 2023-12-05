@@ -15,6 +15,7 @@
     "e2e:headless": "start-server-and-test dev http://localhost:3000 cypress:headless"
   },
   "dependencies": {
+    "@material-tailwind/react": "^2.1.5",
     "@sentry/nextjs": "^7.54.0",
     "avilatek-utils": "^0.1.0",
     "framer-motion": "^10.12.16",
