@@ -84,7 +84,9 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
                       {item.titulo}
                     </h4>
                     <p className="text-neutral-600">{item.precio}</p>
-                    <img className="w-32" src="/review.png" alt="" />
+                    <div className="w-32">
+                      <Image src="/review.png" width={1160} height={220} alt="" />
+                    </div>
                     <button className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
                       <ShopSvg />
                       <span>Agregar</span>
@@ -99,7 +101,7 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
           </>
         ) : (
           <>
-            <div className="lg:col-span-1 lg:block hidden">
+              <div className="lg:col-span-1 my-auto lg:block hidden">
               <Image src="/cat.png" width={300} height={300} alt="" />
             </div>
             <div className="lg:col-span-2">
@@ -111,8 +113,10 @@ const Productos: FC<ProductosProps> = ({ imagenDerecha }) => {
                       {item.titulo}
                     </h4>
                     <p className="text-neutral-600">{item.precio}</p>
-                    <img className="w-32" src="/review.png" alt="" />
-                    <button className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
+                    <div className="w-32">
+                      <Image src="/review.png" width={1160} height={220} alt="" />
+                    </div>
+                    <button type="button" className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
                       <ShopSvg />
                       <span>Agregar</span>
                     </button>

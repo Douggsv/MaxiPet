@@ -49,7 +49,7 @@ const Header: React.FC = () => {
       <div className="bg-primary-300 w-full h-[30px] relative z-40 flex justify-end">
         <div className="flex align-middle relative z-50">
           <DropDown />
-          <div className=" flex items-center space-x-2 mr-8">
+          <div className=" flex items-center space-x-2 sm:mr-6 md:mr-8  lg:mr-8  xl:mr-8 ">
             <TwitterSvg />
             <FacebookSvg />
             <InstagramSvg />

@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             <Image src="/vector1.png" width={60} height={60} alt=""/>
           </div>
           <div className="container mx-auto flex justify-center items-center">
-            <p className="text-sm flex items-center">
+            <p className="text-sm flex items-center sm:text-[10px] md:text-sm lg:text-sm xl:text-sm">
               Copyright © 2021 Maxi Pet. Todos los Derechos Reservados.
               Desarrollado por Avila Tek
               <Image

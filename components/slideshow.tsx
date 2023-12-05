@@ -2,7 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 function Slide(): JSX.Element {
-  const [activeSlide, setActiveSlide] = useState < number > (0);
+  const [activeSlide, setActiveSlide] = useState <number> (0);
 
   const slides: string[] = ["/foto1.png", "/foto2.png", "/foto3.png"];
 

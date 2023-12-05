@@ -69,7 +69,8 @@ const Productos2 = () => {
                   {item.titulo}
                 </h4>
                 <p className="text-neutral-600">{item.precio}</p>
-                <img className="w-32" src="/review.png" alt="" />
+                <Image src="/review.png" width={128} height={128} alt="" />
+
                 <button className="bg-primary-300 text-white px-8 py-1 flex items-center space-x-2 rounded-md hover:bg-primary-100">
                   <ShopSvg />
                   <span>Agregar</span>
