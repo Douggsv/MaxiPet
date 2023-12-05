@@ -13,4 +13,4 @@ export function HouseSvg(props) {
       />
     </svg>
   );
-}
+

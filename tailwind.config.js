@@ -2,6 +2,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 /** @type {import('tailwindcss').Config} */
 
+
 module.exports = {
   content: [
     './pages/**/*.{js,jsx,ts,tsx}',
@@ -17,6 +18,8 @@ module.exports = {
       xl: '1280px',
     },
     extend: {
+
+
       colors: {
         primary: {
           50: '#FA7D8A',
@@ -78,6 +81,20 @@ module.exports = {
           200: '#FCFCFC',
           300: '#222222',
         },
+         danger: {
+          100: '#FF958E',
+          200: '#FF574D',
+          300: '#FF271A',
+          400: '#CC0C00'
+
+        },
+
+        background:{
+          100: '#FFFEFE',
+          200: '#FCFCFC',
+          300: '#222222'
+        }
+
       },
     },
   },

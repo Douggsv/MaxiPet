@@ -27,9 +27,7 @@ function HomePage() {
           texto2="PRODUCTOS DESTACADOS"
           texto3=""
         />
-
         <Productos imagenDerecha />
-
         <Image
           src="/ad2.png"
           width={1160}
@@ -42,7 +40,6 @@ function HomePage() {
           texto2="PRODUCTOS POPULARES"
           texto3=""
         />
-
         <Productos2 />
         <Image
           src="/ad1.png"
@@ -51,7 +48,6 @@ function HomePage() {
           className="m-20 mx-auto"
           alt=""
         />
-
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="ÚLTIMOS PRODUCTOS"
@@ -63,17 +59,13 @@ function HomePage() {
           texto2="NUESTROS SERVICIOS"
           texto3="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In velit ut viverra fames sed."
         />
-
         <Servicios />
-
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="TRABAJAMOS CON LAS MEJORES MARCAS"
           texto3=""
         />
-
         <Marcas />
-
         <Footer />
       </div>
     </div>
