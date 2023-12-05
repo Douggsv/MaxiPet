@@ -1,30 +1,57 @@
 import React from "react";
-import { ShopSvg } from "../components/svg/shop";
+import { ShopSvg } from "./svg/shop";
+import Image from "next/image";
+
+interface Feature {
+  imagen: JSX.Element;
+  titulo: string;
+  precio: string;
+}
 
 const Productos2 = () => {
-  const features = [
+  const features: Feature[] = [
     {
-      imagen: <img className="drop-shadow-lg" src="/bolsa.png" alt="" />,
+      imagen: (
+        <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
+          <Image src="/bolsa.png" width={100} height={100} alt="" />
+        </div>
+      ),
       titulo: "1st Choice Puppy Chiot",
       precio: "$9.99",
     },
     {
-      imagen: <img className="drop-shadow-lg" src="/bolsa.png" alt="" />,
+      imagen: (
+        <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
+          <Image src="/bolsa.png" width={100} height={100} alt="" />
+        </div>
+      ),
       titulo: "2nd Choice Puppy Chiot",
       precio: "$10.99",
     },
     {
-      imagen: <img className="drop-shadow-lg" src="/bolsa.png" alt="" />,
+      imagen: (
+        <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
+          <Image src="/bolsa.png" width={100} height={100} alt="" />
+        </div>
+      ),
       titulo: "3rd Choice Puppy Chiot",
       precio: "$12.99",
     },
     {
-      imagen: <img className="drop-shadow-lg" src="/bolsa.png" alt="" />,
+      imagen: (
+        <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
+          <Image src="/bolsa.png" width={100} height={100} alt="" />
+        </div>
+      ),
       titulo: "4th Choice Puppy Chiot",
       precio: "$7.99",
     },
     {
-      imagen: <img className="drop-shadow-lg" src="/bolsa.png" alt="" />,
+      imagen: (
+        <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
+          <Image src="/bolsa.png" width={100} height={100} alt="" />
+        </div>
+      ),
       titulo: "5th Choice Puppy Chiot",
       precio: "$6.99",
     },
@@ -37,9 +64,7 @@ const Productos2 = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-8 gap-x-12 justify-center">
             {features.map((item, idx) => (
               <div key={idx} className="space-y-2">
-                <div className="w-[100px] mx-auto flex sm:mx-auto md:mx-2 lg:mx-2 xl:mx-2">
-                  {item.imagen}
-                </div>
+                {item.imagen}
                 <h4 className="text-sm text-black font-semibold">
                   {item.titulo}
                 </h4>

@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { LocSvg } from "./svg/loc";
-import { TwitterSvg } from "./svg/twitter";
-import { InstagramSvg } from "./svg/ig";
-import { FacebookSvg } from "./svg/fb";
 
-function Dropdown() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("Bello monte"); // Inicializa el estado
+interface DropdownProps {
+}
+
+function Dropdown(props: DropdownProps) {
+  const [isOpen, setIsOpen] = useState < boolean > (false);
+  const [selectedOption, setSelectedOption] = useState < string > ("Bello monte");
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleOptionClick = (option) => {
+  const handleOptionClick = (option: string) => {
     setSelectedOption(option); // Establece la opción seleccionada
-    setIsOpen(false); // Cierro el dropdown al hacer clic en una opción
+    setIsOpen(false); // Cierra el dropdown al hacer clic en una opción
   };
 
   return (
@@ -27,9 +27,8 @@ function Dropdown() {
         {selectedOption}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className={`hover:text-black h-5 w-5 transition-transform transform ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`hover:text-black h-5 w-5 transition-transform transform ${isOpen ? "rotate-180" : ""
+            }`}
           viewBox="0 0 20 20"
           fill="currentColor"
         >

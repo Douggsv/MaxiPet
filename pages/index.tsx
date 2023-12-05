@@ -1,15 +1,14 @@
 import React from 'react';
-import { useEffect, useRef, useState } from 'react'
-import Slide from '../components/slideshow'
-import Categorias from '../components/categorias'
-import Productos from '../components/productos'
-import Titulo from '../components/titulo'
-import Header from '../components/header'
-import Productos2 from '../components/productos2'
-import Servicios from '../components/servicios'
-import Marcas from '../components/marcas'
-import Footer from '../components/footer'
-
+import Image from 'next/image';
+import Slide from '../components/slideshow';
+import Categorias from '../components/categorias';
+import Productos from '../components/productos';
+import Titulo from '../components/titulo';
+import Header from '../components/header';
+import Productos2 from '../components/productos2';
+import Servicios from '../components/servicios';
+import Marcas from '../components/marcas';
+import Footer from '../components/footer';
 
 
 function HomePage() {
@@ -24,7 +23,7 @@ function HomePage() {
           texto2="UNA GRAN VARIEDAD DE CATEGORIAS"
           texto3=""
         />
-        < Categorias />
+        <Categorias />
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="PRODUCTOS DESTACADOS"
@@ -33,7 +32,7 @@ function HomePage() {
 
         <Productos imagenDerecha={true} />
 
-        <img src="ad2.png" className='m-20 mx-auto' alt="" />
+        <Image src="/ad2.png" width={1160} height={220} className='m-20 mx-auto' alt="" />
         <Titulo
           texto1="Lorem ipsum dolor sit amet."
           texto2="PRODUCTOS POPULARES"
@@ -41,7 +40,7 @@ function HomePage() {
         />
 
         <Productos2 />
-        <img src="ad1.png" className='m-20 mx-auto ' alt="" />
+        <Image src="/ad1.png" width={1160} height={220} className='m-20 mx-auto' alt="" />
 
 
         <Titulo
@@ -70,8 +69,6 @@ function HomePage() {
       </div>
 
     </div>
-
-
   );
 }
 

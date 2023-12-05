@@ -20,7 +20,7 @@
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    "components/dropdown.js"
-, "components/titulo.js"  ],
+    "components/dropdown.tsx"
+, "components/titulo.tsx", "components/footer.tsx"  ],
   "exclude": ["node_modules"]
 }

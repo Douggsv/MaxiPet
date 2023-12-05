@@ -1,6 +1,12 @@
 import React from 'react';
 
-const Titulo = ({ texto1, texto2, texto3 }) => {
+interface TituloProps {
+  texto1: string;
+  texto2: string;
+  texto3: string;
+}
+
+const Titulo: React.FC<TituloProps> = ({ texto1, texto2, texto3 }: TituloProps) => {
   return (
     <div className="text-center sm:text-center md:text-left lg:text-center xl:text-left sm: md:ml-14 lg:ml-0 xl:ml-20 mb-20">
       <div className="text-secondary-500">{texto1}</div>

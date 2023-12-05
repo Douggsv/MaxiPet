@@ -1,18 +1,24 @@
 import { useEffect, useRef, useState } from "react";
-import { ShopSvg } from "../components/svg/shop";
-import { UserSvg } from "../components/svg/user";
-import { HouseSvg } from "../components/svg/house";
-import { LocSvg } from "../components/svg/loc";
-import { FacebookSvg } from "../components/svg/fb";
-import { InstagramSvg } from "../components/svg/ig";
-import { TwitterSvg } from "../components/svg/twitter";
-import DropDown from "../components/dropdown";
-const Header = () => {
+import { ShopSvg } from "./svg/shop";
+import { UserSvg } from "./svg/user";
+import { HouseSvg } from "./svg/house";
+import { LocSvg } from "./svg/loc";
+import { FacebookSvg } from "./svg/fb";
+import { InstagramSvg } from "./svg/ig";
+import { TwitterSvg } from "./svg/twitter";
+import DropDown from './dropdown';
+import Image from 'next/image';
+
+interface NavigationItem {
+  title: string;
+  path: string;
+}
+
+const Header: React.FC = () => {
   const [state, setState] = useState(false);
+  const navRef = useRef < HTMLDivElement > (null);
 
-  const navRef = useRef(null);
-
-  const navigation = [
+  const navigation: NavigationItem[] = [
     { title: "Inicio", path: "#" },
     { title: "Comprar por marca", path: "#" },
     { title: "Comprar por mascota", path: "#" },
@@ -20,6 +26,7 @@ const Header = () => {
     { title: "Promociones", path: "#" },
     { title: "Nosotros", path: "#" },
   ];
+
   useEffect(() => {
     if (navRef.current) {
       const body = document.body;
@@ -36,6 +43,7 @@ const Header = () => {
       };
     }
   }, [state]);
+
   return (
     <div>
       <div className="bg-primary-300 w-full h-[30px] relative z-40 flex justify-end">
@@ -50,7 +58,7 @@ const Header = () => {
       </div>
       <div className="flex items-center justify-between mx-auto px-4">
         <a className="ml-4" href="#">
-          <img src="/logomaxi.png" width={169.46} height={46} alt="Maxipet" />
+          <Image src="/logomaxi.png" width={169.46} height={46} alt="Maxipet" />
         </a>
         <div className="flex items-center justify-center flex-1">
           <form className="flex items-center space-x-2 p-2 max-w-3xl">
@@ -92,9 +100,9 @@ const Header = () => {
 
       <nav
         ref={navRef}
-        className="bg-white drop-shadow-lg relative  z-20  w-full top-0 items-center justify-center"
+        className="bg-white drop-shadow-lg relative z-20 w-full top-0 items-center justify-center"
       >
-        <div className="items-center  max-w-screen-xl mx-auto md:px-8 lg:flex">
+        <div className="items-center max-w-screen-xl mx-auto md:px-8 lg:flex">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
             <div className="flex items-center justify-center flex-1 lg:hidden">
               <button
@@ -134,21 +142,18 @@ const Header = () => {
             </div>
           </div>
           <div
-            className={`items-center content-center justify-center mx-auto ${
-              state ? "block" : "hidden"
-            } lg:flex lg:mx-0`}
+            className={`items-center content-center justify-center mx-auto ${state ? "block" : "hidden"
+              } lg:flex lg:mx-0`}
           >
             <ul className="justify-center items-center space-y-8 lg:flex gap-24 lg:space-y-0">
-              {navigation.map((item, idx) => {
-                return (
-                  <li
-                    key={idx}
-                    className="text-gray-600 hover:text-primary-300 sm:text-sm md:text-sm lg:text-sm xl:text-md justify-center items-center flex"
-                  >
-                    <a href={item.path}>{item.title}</a>
-                  </li>
-                );
-              })}
+              {navigation.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="text-gray-600 hover:text-primary-300 sm:text-sm md:text-sm lg:text-sm xl:text-md justify-center items-center flex"
+                >
+                  <a href={item.path}>{item.title}</a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
