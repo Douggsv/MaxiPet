@@ -47,7 +47,7 @@ const Header: React.FC = () => {
   return (
     <div>
       <div className="bg-primary-300 w-full h-[30px] relative z-40 flex justify-end">
-        <div className="flex align-middle relative z-50">
+        <div className="flex align-middle relative z-30">
           <DropDown />
           <div className=" flex items-center space-x-2 sm:mr-6 md:mr-8  lg:mr-8  xl:mr-8 ">
             <TwitterSvg />
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
 
       <nav
         ref={navRef}
-        className="bg-white drop-shadow-lg relative z-20 w-full top-0 items-center justify-center"
+        className="bg-white drop-shadow-lg relative z-30 w-full top-0 items-center justify-center"
       >
         <div className="items-center max-w-screen-xl mx-auto md:px-8 lg:flex">
           <div className="flex items-center justify-between py-3 lg:py-4 lg:block">

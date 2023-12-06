@@ -11,12 +11,12 @@ const Servicios = () => {
   const features: Feature[] = [
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: 'Peluqueria',
+      titulo: 'Peluquería',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: 'Odontologia',
+      titulo: 'Odontología',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {
@@ -31,7 +31,7 @@ const Servicios = () => {
     },
     {
       imagen: <Image src="/logoicono.png" width={96} height={96} alt="" />,
-      titulo: 'Psicologia canina',
+      titulo: 'Psicología canina',
       desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mus molestie rhoncus id nunc, porta leo tempus facilisi.',
     },
     {

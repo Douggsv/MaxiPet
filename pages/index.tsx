@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from "react";
+import React from "react";
 import Image from 'next/image';
 import Slide from '../components/slideshow';
 import Categorias from '../components/categorias';
@@ -9,8 +10,10 @@ import Productos2 from '../components/productos2';
 import Servicios from '../components/servicios';
 import Marcas from '../components/marcas';
 import Footer from '../components/footer';
+import Modal from '../components/modal';
 
 function HomePage() {
+  const [showModal, setShowModal] = useState(true);
   return (
     <div className="mx-auto">
       <Header />
@@ -67,6 +70,8 @@ function HomePage() {
         />
         <Marcas />
         <Footer />
+        < Modal isVisible={showModal} onClose={() =>
+          setShowModal(false)} />
       </div>
     </div>
   );
