@@ -10,8 +10,9 @@ function Slide(): ReactElement {
       type="button"
       key={index}
       onClick={() => setActiveSlide(index)}
-      className={`mx-1 box-content h-1 w-8 flex-initial cursor-pointer border-0 border-y-4 border-solid border-transparent bg-red-500 bg-clip-padding p-0 ${activeSlide === index ? 'opacity-100' : 'opacity-50'
-        } transition-opacity duration-600 ease-cubic-bezier(0.25,0.1,0.25,1.0) motion-reduce:transition-none`}
+      className={`mx-1 box-content h-1 w-8 flex-initial cursor-pointer border-0 border-y-4 border-solid border-transparent bg-red-500 bg-clip-padding p-0 ${
+        activeSlide === index ? 'opacity-100' : 'opacity-50'
+      } transition-opacity duration-600 ease-cubic-bezier(0.25,0.1,0.25,1.0) motion-reduce:transition-none`}
       aria-current={activeSlide === index ? 'true' : 'false'}
       aria-label={`Slide ${index + 1}`}
     />
@@ -20,8 +21,9 @@ function Slide(): ReactElement {
   const carouselItems = slides.map((slide, index) => (
     <div
       key={index}
-      className={`${activeSlide === index ? 'block' : 'hidden'
-        } w-full overflow-hidden after:clear-both after:block after:content-[''] transition-opacity duration-600 ease-cubic-bezier(0.25,0.1,0.25,1.0) motion-reduce:transition-none`}
+      className={`${
+        activeSlide === index ? 'block' : 'hidden'
+      } w-full overflow-hidden after:clear-both after:block after:content-[''] transition-opacity duration-600 ease-cubic-bezier(0.25,0.1,0.25,1.0) motion-reduce:transition-none`}
       data-te-carousel-item
       data-te-carousel-active={activeSlide === index ? 'true' : 'false'}
     >

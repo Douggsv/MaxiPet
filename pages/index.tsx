@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from "react";
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Slide from '../components/slideshow';
 import Categorias from '../components/categorias';
@@ -70,8 +69,7 @@ function HomePage() {
         />
         <Marcas />
         <Footer />
-        < Modal isVisible={showModal} onClose={() =>
-          setShowModal(false)} />
+        <Modal isVisible={showModal} onClose={() => setShowModal(false)} />
       </div>
     </div>
   );
