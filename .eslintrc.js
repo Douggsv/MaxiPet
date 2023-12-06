@@ -11,5 +11,6 @@ module.exports = {
     '@next/next/no-img-element': 'off',
     'react/function-component-definition': 'off',
     'react/no-unstable-nested-components': 'off',
+    '@typescript-eslint/no-namespace': 'off',
   },
 };

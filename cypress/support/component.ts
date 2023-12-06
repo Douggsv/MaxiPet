@@ -14,6 +14,9 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+// eslint-disable-next-line @typescript-eslint/no-namespace
+// eslint-disable-next-line
+// eslint-disable-next-line @typescript-eslint/no-namespace
 import './commands';
 
 // Alternatively you can use CommonJS syntax:
